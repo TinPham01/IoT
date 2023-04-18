@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/screens/login_screen.dart';
 
 void main(List<String> args) {
   runApp(const MaterialApp(
@@ -12,29 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          'IoT Project',
-          style: TextStyle(fontSize: 30),
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
         ),
-        backgroundColor: Colors.green,
-      ),
-      body: const Center(
-        child: Text(
-          'Hello World',
-          style: TextStyle(fontSize: 40),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.green,
-        child: const Icon(
-          Icons.add,
-          size: 30,
-        ),
-      )
-    );
+        home: const LogInScreen());
   }
 }
