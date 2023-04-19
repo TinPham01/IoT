@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
 body {
   background-color: #f4f6f8;
   font-family: "Oxygen", sans-serif;
-  min-width: 1300px;
+  min-width: 100vh;
 }
 
 @media screen and (min-width: 740px) and (max-width: 1024px) {
